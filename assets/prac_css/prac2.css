@@ -1,0 +1,313 @@
+/*left menu*/
+.left-menu {
+	position: fixed;
+	width: 50px;
+	min-height: 100vh;
+	background: blue;
+	left: 0;
+	top: 0;
+}
+
+.left-menu ul li{
+	position: relative;
+}
+
+.left-menu ul li i {
+	display: block;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 30px 0;
+	cursor: pointer;
+	color: #fff;
+}
+
+.left-menu ul li span{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translateX(-300px);
+	color: #fff;
+	transition: transform 0.4s ease;
+}
+
+
+.left-menu:hover{
+	width: 150px;
+}
+
+.left-menu:hover i {
+	text-align: left;
+	padding-left: 20px;
+}
+
+.left-menu:hover ul li span{
+	transform: translate(0);
+}
+
+/*//left menu*/
+
+.container {
+	margin-left: 50px;
+}
+
+.top {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 5px 6px #f2f2f2;
+}
+
+.left {
+	position: relative;
+	margin-left: 30px;
+}
+
+.input {
+	width: 150px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	transition: all 0.5s ease;
+}
+
+.input:focus{
+	width: 300px;
+}
+
+.btn {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	padding: 8px;
+	background: black;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.right {
+	padding-right: 30px;
+}
+
+.right i {
+	padding-right: 20px;
+	color: #808080;
+	cursor: pointer;
+}
+
+.right span {
+	color: #808080;
+}
+
+.menu {
+	display: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin-right: 40px;
+}
+
+input[type="checkbox"] + label span {
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: black;
+	border-radius: 50px;
+	transition: all 0.3s;
+}
+
+input[type="checkbox"] + label span:nth-child(1) {
+	top: 1px;
+}
+
+input[type="checkbox"] + label span:nth-child(2) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+input[type="checkbox"] + label span:nth-child(3) {
+	bottom: 2px;
+}
+
+input[type="checkbox"]:checked + label span:nth-child(1) {
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+input[type="checkbox"]:checked + label span:nth-child(2) {
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+input[type="checkbox"]:checked + label span:nth-child(3) {
+	opacity: 0;
+}
+
+.section {
+	padding: 15px 30px;
+}
+
+.section > h1 {
+	margin-bottom: 30px;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card > div {
+	position: relative;
+	width: 24%;
+	border-radius: 10px;
+	padding: 20px 30px;
+	box-shadow: 4px 0 5px #eee,
+		0 4px 5px #eee,
+		0 -4px 5px #eee;
+}
+
+.card > .card-menu:nth-child(1) {
+	border-left: 4px solid #90cbe3;
+}
+
+.card > .card-menu:nth-child(2) {
+	border-left: 4px solid #64c275;
+}
+
+.card > .card-menu:nth-child(3) {
+	border-left: 4px solid #4b4dab;
+}
+
+.card > .card-menu:nth-child(4) {
+	border-left: 4px solid #facb61;
+}
+
+.card-menu h2 {
+	font-weight: 400;
+	padding-bottom: 10px;
+	color: #9e9a96;
+	font-size: 20px;
+}
+
+.card-menu p {
+	font-weight: 900;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.card-menu i {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 40px;
+	color: #808080;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	align-items: flex-start;
+}
+
+.bottom > div {
+	box-shadow: 5px 0 6px #eee,
+		0 -3px 6px #eee,
+		1px -1px 6px #eee;
+	border: 1px solid #eee;
+}
+
+.bottom > div:nth-child(1) {
+	width: 50%;
+}
+
+.bottom > div:nth-child(2) {
+	width: 45%;
+}
+
+.bottom > div > h2 {
+	border-bottom: 1px solid #eee;
+	padding: 10px 20px;
+}
+
+.bottom > div > canvas {
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.bottom > div ul li {
+	border-bottom: 1px solid #eee;
+}
+
+.bottom > div ul li:last-child {
+	border-bottom: 0;
+}
+
+.bottom > div ul li a {
+	display: block;
+	padding: 10px 20px;
+}
+
+.bottom > div ul li a:hover {
+	background: orange;
+}
+
+.bottom > div ul li a:active {
+	background: orange;
+}
+
+.bottom > div ul li a:focus {
+	background: orange;
+}
+
+
+@media screen and (max-width:980px) {
+	.card i {
+		display: none;
+	}
+}
+
+@media screen and (max-width:850px) {
+
+	.menu {
+		display: block;
+	}
+
+	.right {
+		display: none;
+	}
+
+	.card {
+		flex-direction: column;
+	}
+
+	.card > div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.bottom {
+		flex-direction: column;
+	}
+
+	.bottom > div:nth-child(1) {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.bottom > div:nth-child(2) {
+		width: 100%;
+	}
+}
+
+

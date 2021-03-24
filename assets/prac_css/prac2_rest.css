@@ -1,0 +1,41 @@
+body,
+section,
+div,
+article,
+p,
+span,
+h1,
+h2,
+h3,
+h4
+,h5,
+header
+,p,
+pre
+,a,
+ul,
+li,
+ol,
+canvas{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+ul,li,ol{
+	list-style: none;
+}
+
+input::-webkit-input-placeholder{
+	color: #b6bdc2;
+}
+
+.focus{
+	background: orange;
+}

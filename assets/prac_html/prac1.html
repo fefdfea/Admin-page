@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../prac_css/prac2_rest.css">
+	<link rel="stylesheet" href="../prac_css/prac2.css">
+	<title>Admin Page</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="top">
+				<div class="left">
+					<input type="text" class="input" placeholder="Search">
+					<button class="btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+				<div class="right">
+					<i class="fas fa-bell">
+					<a href="#" class="badge badge-danger">9</a>
+					</i>
+					<i class="fas fa-envelope"></i>
+					<span>Minny Park</span>
+				</div>
+				<div class="menu">
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</header>
+		<section class="section">
+			<h1>Dashboard</h1>
+			<div class="card">
+				<div class="card-menu">
+					<h2>Earnings (Monthly)</h2>
+					<p>$400,000</p>
+					<i class="fas fa-hat-cowboy-side"></i>
+				</div>
+				<div class="card-menu">
+					<h2>Earnings (Annual)</h2>
+					<p>$800,000</p>
+					<i class="fas fa-money-bill-alt"></i>
+				</div>
+				<div class="card-menu">
+					<h2>Tasks</h2>
+					<p>13</p>
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="card-menu">
+					<h2>Requests</h2>
+					<p>26</p>
+					<i class="fas fa-comments"></i>
+				</div>
+			</div>
+			<div class="bottom">
+				<div>
+					<h2>Earnings Overview</h2>
+					<canvas id="myChart"></canvas>
+				</div>
+				<div>
+					<h2>Tasks</h2>
+					<ul>
+						<li><a href="#">Borrowed items</a></li>
+						<li><a href="#">Trello requests</a></li>
+						<li><a href="#">Marked Comments</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<aside>
+		<div class="left-menu">
+			<ul>
+				<li><a href="">
+						<i class="fas fa-house-user"></i>
+						<span>Home</span>
+					</a></li>
+				<li><a href="">
+						<i class="fas fa-headphones"></i>
+						<span>Services</span>
+					</a></li>
+				<li><a href="">
+						<i class="fas fa-flag"></i>
+						<span>Alert</span>
+					</a></li>
+				<li><a href="">
+						<i class="fas fa-chart-pie"></i>
+						<span>Chart</span>
+					</a></li>
+			</ul>
+		</div>
+	</aside>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var chart = new Chart(ctx, {
+			//차트타입
+			type: 'line',
+
+			//데이터
+			data: {
+				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+				datasets: [{
+					label: 'My First dataset',
+					backgroundColor: 'rgb(255, 99, 132)',
+					borderColor: 'rgb(255, 99, 132)',
+					data: [0, 10, 5, 2, 20, 30, 45]
+				}]
+			},
+			options: {}
+		});
+
+	</script>
+	<script src="../prac_js/prac1.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+<i class="fas fa-house-user"></i>
+<i class="fas fa-headphones"></i>
+<i class="fas fa-flag"></i>
+<i class="fas fa-chart-pie"></i>
+
+
+-->
